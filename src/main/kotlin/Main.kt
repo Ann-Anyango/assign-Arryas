@@ -1,7 +1,10 @@
+import javax.naming.Name
+
 fun main() {
     people()
     addition()
-    student()
+    var names= friends("Mary","Gift","Manu")
+    println(names)
     cities()
 
 
@@ -18,10 +21,11 @@ fun addition(){
     println(number[11])
     println(number.sorted())
 }
-fun student(){
-    var name= arrayOf("prefect","jays","yamy")
-    println(name.contentToString())
+fun friends(friend1: String,friend2: String,friend3: String):String{
+    var friendsName= arrayOf(friend1,friend2,friend3)
+    return friendsName.contentToString()
 }
+
 fun cities (){
     var  cities = arrayOf("harare","mumbai","dodoma","jakarta")
     for (city in cities)
